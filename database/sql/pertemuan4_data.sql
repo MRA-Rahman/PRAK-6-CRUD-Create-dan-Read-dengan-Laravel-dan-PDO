@@ -9,8 +9,8 @@ INSERT INTO program_studi (nama_prodi) VALUES
 INSERT INTO mahasiswa (nim, nama, email, usia, program_studi_id) VALUES
 ('2401010001', 'Rifki', 'rifki@gmail.com', 22, 1),
 ('2401010047', 'Fadhil', 'fadhil@gmail.com', 21, 1),
-('2401020057', 'Rauf', 'rauf@gmail.com', 19, 2),
-('2401020099', 'Data Sementara', 'sementara@gmail.com', 20, 2);
+('2401020057', 'Rauf', 'rauf@gmail.com', 19, 2);
+
 
 -- 3. Lakukan UPDATE Email (Contoh update email Fadhil sesuai gambar)
 UPDATE mahasiswa 
@@ -23,7 +23,7 @@ INSERT INTO mahasiswa (nim, nama, email, usia, program_studi_id) VALUES
 
 -- 5. Lakukan DELETE Data Sementara
 DELETE FROM mahasiswa 
-WHERE nim = '2401020099';
+WHERE nim = '2401020001';
 
 -- 6. Tampilkan Hasil Akhir 4 Mahasiswa dengan SELECT JOIN
 SELECT m.nim, m.nama, m.email, m.usia, p.nama_prodi
